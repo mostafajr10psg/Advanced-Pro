@@ -1519,13 +1519,16 @@ header .mega-menu .mega-links li a i {
 }
 
 .plans .plan ul li {
-    padding: 20px 0;
+    padding: 20px;
     border-top: 1px solid #eaeaea;
+    position: relative;
 }
 
-.plans .plan ul li i {
+.plans .plan ul li::before {
+    font-family: "font awesome 5 free";
+    content: "\f00c";
+    font-weight: 900;
     color: var(--main-color);
-    padding-left: 20px;
     padding-right: 8px;
 }
 
@@ -1724,31 +1727,21 @@ header .mega-menu .mega-links li a i {
 
 .discount {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
 }
 
 @media (max-width: 991px) {
     .discount {
-        height: 150vh;
         flex-direction: column;
     }
 }
 
-@media (max-width: 991px) {
-    .discount .animation {
-        width: 100%;
-        height: 50%;
-    }
-}
-
 .discount .dis-left {
-    flex-basis: 50%;
+    flex: 1;
     background-image: url(../imgs/discount-background1.jpg);
     background-size: cover;
     position: relative;
-    top: 0;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1766,12 +1759,6 @@ header .mega-menu .mega-links li a i {
     width: 100%;
     height: 100%;
     background-color: rgb(43 146 234 / 98%);
-}
-
-@media (max-width: 991px) {
-    .discount .dis-left {
-        flex-basis: 47%;
-    }
 }
 
 .discount .dis-left .text {
@@ -1795,29 +1782,27 @@ header .mega-menu .mega-links li a i {
 }
 
 .discount .dis-right {
-    flex-basis: 50%;
+    flex: 1;
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .discount .dis-right {
-        flex-basis: 53%;
+        padding: 40px 0;
     }
 }
 
 .discount .dis-right .info {
     text-align: center;
-    margin-top: 130px;
 }
 
 @media (max-width: 991px) {
     .discount .dis-right .info {
-        margin: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 }
 
