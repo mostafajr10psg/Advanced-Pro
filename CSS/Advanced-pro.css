@@ -1419,6 +1419,12 @@ header .mega-menu .mega-links li a i {
     bottom: 200px;
 }
 
+@media (max-width: 767px) {
+    .plans img.left {
+        bottom: 65px;
+    }
+}
+
 .plans .plan {
     background-color: white;
     position: relative;
