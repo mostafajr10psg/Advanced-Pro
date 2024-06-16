@@ -8,6 +8,7 @@ body {
 
 :root {
     --main-color: #2196f3;
+    --main-alt-color: #1787e0;
     --main-background: #eee;
     --p-color: #777;
     --rate-color: #FFC107;
@@ -966,7 +967,6 @@ header .mega-menu .mega-links li a i {
     color: #ff0000;
 }
 
-
 .team-members .box .info {
     padding-left: 80px;
     padding-bottom: 25px;
@@ -1398,6 +1398,11 @@ header .mega-menu .mega-links li a i {
     border-radius: 50px;
     font-weight: bold;
     cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.events form input[type="submit"]:hover {
+    background-color: var(--main-alt-color);
 }
 
 @media (max-width: 767px) {
@@ -1856,6 +1861,12 @@ header .mega-menu .mega-links li a i {
     font-weight: bold;
     text-transform: capitalize;
     margin: 0;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.discount .dis-right .input[type="submit"]:hover {
+    background-color: var(--main-alt-color);
 }
 
 .discount img.visa {
